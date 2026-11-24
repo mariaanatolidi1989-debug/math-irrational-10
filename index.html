@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Самостійна робота | Математика 10 клас</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">МАТЕМАТИКА · 10 КЛАС</p>
+      <h1>Самостійна робота</h1>
+      <h2>Ірраціональні рівняння та їх системи</h2>
+      <p>Перевір свої знання та отримай результат!</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card instructions">
+      <h2>📘 Інструкція до роботи</h2>
+      <ul>
+        <li>Уважно прочитай кожне завдання.</li>
+        <li>Обери правильний варіант або введи відповідь.</li>
+        <li>Записуй відповіді без зайвих пробілів.</li>
+        <li>Після виконання всіх завдань натисни «Завершити роботу».</li>
+        <li>Перевір свою роботу перед надсиланням.</li>
+      </ul>
+      <p><strong>Максимальна оцінка: 12 балів.</strong></p>
+    </section>
+
+    <section class="card">
+      <h2>👩‍🎓 Дані учня</h2>
+
+      <div class="student-fields">
+        <label for="studentName">Прізвище та ім'я:</label>
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Введіть прізвище та ім'я"
+          required
+        >
+
+        <label for="studentClass">Клас:</label>
+        <select id="studentClass" required>
+          <option value="">Оберіть клас</option>
+          <option value="10-А">10-А</option>
+          <option value="10-Б">10-Б</option>
+          <option value="Інший">Інший</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <h2>✏️ Завдання</h2>
+        <span class="points">10 завдань · 12 балів</span>
+      </div>
+
+      <div id="questions">
+        <!-- Завдання будуть автоматично додані через script.js -->
+      </div>
+    </section>
+
+    <section class="card submit-card">
+      <h2>🏁 Завершення роботи</h2>
+      <p>Переконайся, що всі відповіді заповнені.</p>
+
+      <button type="button" id="finishButton">
+        Завершити роботу
+      </button>
+
+      <div id="result" class="result" hidden>
+        <h2>Твій результат</h2>
+        <p id="score"></p>
+        <p id="feedback"></p>
+        <button type="button" id="sendButton">
+          Надіслати відповіді вчителю
+        </button>
+        <p id="sendStatus" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Математика · 10 клас</p>
+      <p>Бажаємо успіху! 🌷</p>
+    </footer>
+
+  </main>
+</body>
+</html>
