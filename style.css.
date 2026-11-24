@@ -1,0 +1,208 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5fb;
+  color: #263449;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #173b65, #386da5);
+  color: white;
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.eyebrow {
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #c9e3ff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.hero h2 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 15px rgba(30, 60, 100, 0.07);
+}
+
+.card h2 {
+  color: #204b78;
+  margin-top: 0;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+}
+
+.student-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #4385c5;
+  border-color: #4385c5;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.points {
+  background: #e8f1fc;
+  color: #204b78;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.question {
+  padding: 18px;
+  border: 1px solid #e0e7f0;
+  border-radius: 12px;
+  margin: 18px 0;
+}
+
+.question h3 {
+  color: #204b78;
+  margin-top: 0;
+}
+
+.option {
+  display: block;
+  padding: 10px;
+  margin: 8px 0;
+  background: #f5f8fc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option input {
+  width: auto;
+  margin: 0 8px 0 0;
+}
+
+.question input[type="text"] {
+  margin-top: 10px;
+}
+
+button {
+  background: #245b91;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #173b65;
+}
+
+button:disabled {
+  background: #8295a9;
+  cursor: not-allowed;
+}
+
+.submit-card {
+  text-align: center;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  background: #edf5ff;
+  border-radius: 12px;
+}
+
+.result h2 {
+  color: #204b78;
+}
+
+#sendStatus {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  color: #68788d;
+  padding: 20px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 35px 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 19px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
